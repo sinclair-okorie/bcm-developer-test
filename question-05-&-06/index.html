@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles is optional you can comment out -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- Semantic main landmark helps browsers and assistive technology interpret the page. -->
+      <section class="site_container">
+        <div class="auto_row">
+          <h1>Hello, world</h1>
+
+          <div id="paragraph-container">
+            <p>
+              Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+              Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+              Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus
+              sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+              auctor. Cras mattis consectetur purus sit amet fermentum. Morbi
+              leo risus, porta ac consectetur ac, vestibulum at eros
+            </p>
+
+            <p>
+              Integer posuere erat a ante venenatis dapibus posuere velit
+              aliquet. Etiam porta sem malesuada magna mollis euismod. Nulla
+              vitae elit libero, a pharetra augue. Donec sed odio dui. Integer
+              posuere erat a ante venenatis dapibus posuere velit aliquet.
+            </p>
+
+            <p>
+              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+              eget lacinia
+              <a href="https://www.bigcabal.com"
+                >odio sem nec elit. Sed posuere</a
+              >
+              consectetur est at
+              <!-- HTML5 validity: abbr uses title, not the unsupported name attribute. -->
+              <abbr title="Lobortis">lbrt</abbr>. Maecenas faucibus mollis
+              interdum. Aenean lacinia
+              <!-- Accessibility/interpretation: describe this meaningful image; dimensions are numeric HTML attributes. -->
+              <img
+                src="images/test.jpeg"
+                alt="A man cleaning a yellow car"
+                width="300"
+                height="267"
+              />
+              bibendum nulla sed consectetur. Praesent
+              <!-- HTML5 validity: close nested elements in the reverse order they were opened. -->
+              <code
+                ><b
+                  >commodo cursus magna, vel scelerisque nisl consectetur et.</b
+                ></code
+              >
+            </p>
+          </div>
+
+          <button id="add-paragraphs" type="button">Hit me</button>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
